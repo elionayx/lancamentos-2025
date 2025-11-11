@@ -1,7 +1,7 @@
 # Integrantes do Grupo:
 
 Elionay Costa /
-Aucemi Souza /
+Aucemi Santos /
 Aluilson Araújo /
 Allan Jefferson /
 Breno Gomes
