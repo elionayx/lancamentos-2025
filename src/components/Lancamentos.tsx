@@ -36,3 +36,40 @@ export function Lancamentos() {
 
     buscarConteudo();
   }, []);
+
+  return (
+    <Box sx={{ textAlign: "center", padding: "20px" }}>
+      <Typography variant="h4" sx={{ marginBottom: 3, fontWeight: 600 }}>
+        Lançamentos de 2025
+      </Typography>
+
+      <Typography variant="h5" sx={{ marginTop: 2 }}>
+        Filmes
+      </Typography>
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        {filmes.map((f) => (
+          <CardConteudo
+            key={f.id}
+            titulo={f.title || ""}
+            data={f.release_date}
+            imagem={f.poster_path}
+          />
+        ))}
+      </Box>
+
+      <Typography variant="h5" sx={{ marginTop: 4 }}>
+        Séries
+      </Typography>
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        {series.map((s) => (
+          <CardConteudo
+            key={s.id}
+            titulo={s.name || ""}
+            data={s.first_air_date}
+            imagem={s.poster_path}
+          />
+        ))}
+      </Box>
+    </Box>
+  );
+}
