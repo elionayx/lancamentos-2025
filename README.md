@@ -1,9 +1,9 @@
 # Integrantes do Grupo:
 
-Elionay Costa
-Aucemi Souza
-Aluilson Araújo
-Allan Jefferson
+Elionay Costa /
+Aucemi Souza /
+Aluilson Araújo /
+Allan Jefferson /
 Breno Gomes
 
 
