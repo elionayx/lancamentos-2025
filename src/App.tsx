@@ -1,5 +1,5 @@
 import "./App.css";
-import { Lancamentos } from "./components/Lancamentos";
+import { Lancamentos } from "./pages/Lancamentos";
 
 function App() {
   return (

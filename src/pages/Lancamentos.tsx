@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { tmdb } from "../services/api";
-import { CardConteudo } from "./CardConteudo";
+import { CardConteudo } from "../components/CardConteudo";
 import { Typography, Box } from "@mui/material";
 
 interface Conteudo {
