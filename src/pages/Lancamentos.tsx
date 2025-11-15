@@ -72,4 +72,36 @@ export function Lancamentos() {
       </Box>
     </Box>
   );
+/*enviando o useState para loading*/ 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+  async function fetchData() {
+    try {
+      const response = await api.get("/character");
+      setDados(response.data.results);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  fetchData();
+}, []);
+
+  import { CircularProgress, Box } from "@mui/material";
+
+  if (loading) {
+  return (
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      height="60vh"
+    >
+      <CircularProgress />
+    </Box>
+  );
+}
+
+
 }
