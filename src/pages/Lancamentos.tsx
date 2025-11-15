@@ -99,7 +99,7 @@ export function Lancamentos() {
       height="60vh"
     >
       <CircularProgress />
-    </Box>
+    </Box> 
   );
 }
 
