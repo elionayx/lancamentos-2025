@@ -18,7 +18,8 @@ O projeto usa uma API externa que precisa de uma chave de acesso.
 
 1. Crie um arquivo `.env` na raiz do projeto.
 2. Copie o conteúdo de `.env.example` para dentro dele.
-3. Substitua o valor da variável pela chave real: VITE_API_KEY=chave_aqui
+3. Substitua o valor da variável pela chave real: VITE_TMDB_ACCESS_TOKEN=CHAVE_KEY_AQUI
+
 
 
 

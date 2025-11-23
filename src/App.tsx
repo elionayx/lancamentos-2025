@@ -1,11 +1,20 @@
 import "./App.css";
-import { Lancamentos } from "./pages/Lancamentos";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navigation from "./components/navigation";
+import Home from "./pages/home";
+import Filmes from "./pages/filmes";
+import Series from "./pages/series";
 
 function App() {
   return (
-    <div>
-      <Lancamentos />
-    </div>
+    <BrowserRouter>
+      <Navigation />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/filmes" element={<Filmes />} />
+        <Route path="/series" element={<Series />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

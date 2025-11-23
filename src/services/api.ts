@@ -2,8 +2,10 @@ import axios from "axios";
 
 export const tmdb = axios.create({
   baseURL: "https://api.themoviedb.org/3",
+  headers: {
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`,
+  },
   params: {
-    api_key: import.meta.env.VITE_API_KEY,
     language: "pt-BR",
   },
 });
